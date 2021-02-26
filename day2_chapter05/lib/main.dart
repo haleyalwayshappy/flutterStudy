@@ -17,47 +17,54 @@ class MyApp extends StatelessWidget {
 
 //여기부터 수정
 class MyHomePage extends StatefulWidget {
-  @override
-  _MyHomePageState createState() => _MyHomePageState();
-}
 
-class _MyHomePageState extends State<MyHomePage> {
-  var _isChecked = false;
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('CheckBox/Radio/Switch'),
-      ),
-      body: Padding(
-        padding: const EdgeInsets.all(8.0),
-        child: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              Checkbox(
-                value: _isChecked,
-                onChanged: (value) {
-                  setState(() {
-                    _isChecked;
-                  });
-                },
-              ),
-              SizedBox(
-                height: 40,
-              ),
-              Switch(
-                value: _isChecked,
-                onChanged: (value) {
-                  setState(() {
-                    _isChecked = value;
-                  });
-                },
-              ),
-            ],
-          ),
-        ),
-      ),
-    );
-  }
-}
+
+
+
+
+/**CheckBox와 Switch */
+// class MyHomePage extends StatefulWidget {
+//   @override
+//   _MyHomePageState createState() => _MyHomePageState();
+// }
+
+// class _MyHomePageState extends State<MyHomePage> {
+//   var _isChecked = false;
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       appBar: AppBar(
+//         title: Text('CheckBox/Radio/Switch'),
+//       ),
+//       body: Padding(
+//         padding: const EdgeInsets.all(8.0),
+//         child: Center(
+//           child: Column(
+//             mainAxisAlignment: MainAxisAlignment.center,
+//             children: <Widget>[
+//               Checkbox(
+//                 value: _isChecked,
+//                 onChanged: (value) {
+//                   setState(() {
+//                     _isChecked;
+//                   });
+//                 },
+//               ),
+//               SizedBox(
+//                 height: 40,
+//               ),
+//               Switch(
+//                 value: _isChecked,
+//                 onChanged: (value) {
+//                   setState(() {
+//                     _isChecked = value;
+//                   });
+//                 },
+//               ),
+//             ],
+//           ),
+//         ),
+//       ),
+//     );
+//   }
+// }
