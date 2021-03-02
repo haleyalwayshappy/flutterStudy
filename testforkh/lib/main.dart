@@ -49,7 +49,7 @@ class MyHomePage extends StatelessWidget {
             onTap: () {},
           ),
           ListTile(
-            title: Text('이름'),
+            title: Text('이홍은'),
             trailing: Icon(Icons.navigate_next),
             onTap: () {},
           ),
